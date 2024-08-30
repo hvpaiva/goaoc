@@ -1,3 +1,7 @@
+// Copyright (c) 2024 Highlander Paiva. All rights reserved.
+// Use of this source code is governed by the MIT License that can be found in
+// the LICENSE file.
+
 // Package goaoc provides a framework to facilitate running Advent of Code challenges.
 // This package encompasses utilities for handling input and outputs, selecting challenge parts,
 // and executing them with configurable options.

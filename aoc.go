@@ -1,3 +1,7 @@
+// Copyright (c) 2024 Highlander Paiva. All rights reserved.
+// Use of this source code is governed by the MIT License that can be found in
+// the LICENSE file.
+
 package goaoc
 
 // Challenge represents the function signature expected for both parts of a given challenge.
