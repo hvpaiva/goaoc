@@ -12,12 +12,9 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: 	macos-latest
     steps:
     - uses: actions/checkout@v4
-
-    - name: Install xclip
-      run: sudo apt install xclip
 
     - name: Set up Go
       uses: actions/setup-go@v4
