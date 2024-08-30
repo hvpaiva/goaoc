@@ -16,6 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Install xclip
+      run: apt install xclip
+
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
