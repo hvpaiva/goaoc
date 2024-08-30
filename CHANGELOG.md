@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.1] - 2024-08-30
+
+### Fixed
+- Updated xclip command to receive from stdin
+
 ## [1.0.0] - 2024-08-30
 
 ### Added

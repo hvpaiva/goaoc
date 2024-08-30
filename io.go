@@ -144,7 +144,7 @@ func toClipboard(value string, stdout io.Writer) {
 	case "darwin":
 		cmd = exec.Command("pbcopy")
 	case "linux":
-		cmd = exec.Command("xclip", "-selection", "clipboard")
+		cmd = exec.Command("xclip", "-in", "-selection", "clipboard")
 	case "windows":
 		cmd = exec.Command("clip")
 	default:

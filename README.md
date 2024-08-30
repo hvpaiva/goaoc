@@ -2,6 +2,7 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/hvpaiva/goaoc#section-readme.svg)](https://pkg.go.dev/github.com/hvpaiva/goaoc#section-readme)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hvpaiva/goaoc)](https://goreportcard.com/report/github.com/hvpaiva/goaoc)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Go](https://github.com/hvpaiva/goaoc/actions/workflows/go.yml/badge.svg)](https://github.com/hvpaiva/goaoc/actions/workflows/go.yml)
 
 
 **Go AOC** is a Go library designed to simplify the process of running **Advent of Code** challenges. It streamlines 
