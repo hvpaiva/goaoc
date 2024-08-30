@@ -108,6 +108,7 @@ linters-settings:
           - $gostd
           - github.com/hvpaiva
           - github.com/pkg/errors
+          - github.com/tiagomelo/go-clipboard
 
 issues:
   exclude-rules:

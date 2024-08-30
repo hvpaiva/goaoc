@@ -6,9 +6,8 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"os/exec"
-	"runtime"
-	"strings"
+
+	"github.com/tiagomelo/go-clipboard/clipboard"
 )
 
 // Env struct embodies the input/output streams and command-line arguments used by IO managers.
@@ -138,25 +137,9 @@ func toClipboard(value string, stdout io.Writer) {
 		return
 	}
 
-	var cmd *exec.Cmd
-
-	switch runtime.GOOS {
-	case "darwin":
-		cmd = exec.Command("pbcopy")
-	case "linux":
-		cmd = exec.Command("xclip", "-in", "-selection", "clipboard")
-	case "windows":
-		cmd = exec.Command("clip")
-	default:
-		_, _ = fmt.Fprintf(stdout, "unsupported OS: %s", runtime.GOOS)
-
-		return
-	}
-
-	cmd.Stdin = strings.NewReader(value)
-
-	if err := cmd.Run(); err != nil {
-		_, _ = fmt.Fprintf(stdout, "copy to clipboard command failed: %v", err)
+	c := clipboard.New()
+	if err := c.CopyText(value); err != nil {
+		_, _ = fmt.Fprintf(stdout, "Error copying to clipboard: %s\n", err)
 
 		return
 	}

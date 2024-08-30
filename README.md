@@ -29,7 +29,7 @@ input/output handling and lets you manage challenge execution with ease.
 To install the library, you can use the following command:
 
 ```bash
-go get -u github.com/hvpaiva/goaoc
+go get github.com/hvpaiva/goaoc
 ```
 
 ## Quick Start
